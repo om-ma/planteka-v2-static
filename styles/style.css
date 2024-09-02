@@ -1,0 +1,227 @@
+
+:root {
+    --primary: #5E7D6E;
+    --primary-light: #9CA386;
+    --gray-dark: #383838;
+    --secondary: #B34B23;
+    --skin: #F0E6DC
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-skin {
+    color: var(--skin);
+}
+
+.text-gray-dark {
+    color: var(--gray-dark);
+}
+
+a:link {
+    text-decoration: none !important;
+}
+
+a:visited {
+    text-decoration: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: var(--primary-light) !important;
+}
+
+a.text-primary:hover {
+    color: var(--primary-light) !important;
+}
+
+button {
+    all: unset;
+}
+
+
+/* Bootstrap 4.6 Overrides */
+
+.dropdown-toggle::after, .dropdown-toggle::before {
+    display: none !important;
+}
+
+.btn-secondary {
+    background-color: var(--secondary) !important;
+    border: 0 !important;
+}
+
+/* Custom Utility Classes */
+
+.gap-0\.5 {
+    gap: 0.5rem;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem
+}
+
+.mr-6 {
+    margin-right: 6rem;
+}
+
+.mr-7 {
+    margin-right: 7rem;
+}
+
+.mr-8 {
+    margin-right: 8rem;
+}
+
+.mr-10 {
+    margin-right: 10rem;
+}
+
+.mt-10 {
+    margin-top: 10rem;
+}
+
+.py-0\.5 {
+    padding: 0.25rem;
+}
+
+.border-secondary {
+    border: 1px solid var(--secondary) !important;
+}
+
+/* Component Styles */
+
+nav {
+    height: 4.5rem;
+}
+
+.nav-logo {
+    width: 180px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--gray-dark);
+    width: 26px;
+    height: 26px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 14px;
+    border: 2px solid #ffffff;
+}
+
+.hero-header {
+    background: url('../assets/images/hero-header.jpg');
+    background-size: cover;
+    width: 100%;
+    min-height: 26rem;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 48px;
+}
+
+.hero-tagline {
+    font-size: 25px;
+}
+
+.nav-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.drop-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.header-button {
+    padding: 10px 24px 10px 24px;
+    border-radius: 8px;
+}
+
+.nav-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.1s ease-in-out;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid var(--secondary);
+    
+}
+
+.nav-dropdown {
+    border: 0px !important;
+    position: absolute;
+    width: 100%;
+    transform: translate3d(0px, 70px, 0px)!important;
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+    padding: 0px 20px 5px 20px;
+}
+
+.business-dropdown {
+    margin-left: 20%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 424px) {
+    .hero-header {
+        min-height: 12rem;
+    }
+    .hero-title {
+        font-size: 18px;
+    }
+    .nav-logo {
+        width: 100px;
+    }
+    .nav-icon {
+        width: 20px;
+        height: 20px;
+    }
+    nav {
+        height: 3.5rem;
+    }
+    .cart-count {
+        font-size: 8px;
+        width: 18px;
+        height: 18px;
+        right: -6px;
+        top: -2px;
+    }
+    .language-dropdown {
+        padding: 1px 2px 0px 2px;
+    }
+    .drop-icon {
+        width: 14px;
+        height: 14px;
+    }
+    .drop-text {
+        font-size: 14px;
+    }
+    .header-button {
+        border-radius: 150px;
+        font-size: 14px;
+        padding: 3px 20px 3px 20px;
+    }
+}
