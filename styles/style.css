@@ -1,6 +1,7 @@
 
 :root {
     --primary: #5E7D6E;
+    --primary-medium: #838C68;
     --primary-light: #9CA386;
     --gray-dark: #383838;
     --secondary: #B34B23;
@@ -12,9 +13,14 @@
     color: var(--primary) !important;
 }
 
+.text-primary-medium {
+    color: var(--primary-medium) !important;
+}
+
 .text-secondary {
     color: var(--secondary) !important;
 }
+
 
 .text-skin {
     color: var(--skin);
@@ -62,6 +68,12 @@ button {
 .btn-secondary {
     background-color: var(--secondary) !important;
     border: 0 !important;
+}
+
+.btn-secondary-light {
+    background-color: var(--skin) !important;
+    border: 0 !important;
+    color: var(--brown);
 }
 
 /* Custom Utility Classes */
@@ -263,6 +275,7 @@ nav {
 
 .slider-wrapper-container {
     border-radius: 20px;
+    background: var(--skin);
 }
 
 .slider-img-container {
@@ -314,6 +327,48 @@ nav {
 
 .swiper-button-prev, .swiper-button-next {
     color: black !important;
+}
+
+.found-img {
+    width: 35%;
+    object-fit: cover;
+}
+
+.found-container {
+    gap: 60px;
+}
+
+.found-content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.found-content > h2 {
+    font-size: 45px;
+    line-height: 1.5;
+}
+
+.found-content > .found-content-line {
+    font-size: 21px;
+    color: var(--brown);
+}
+
+.found-content > .found-content-line:first-of-type {
+    margin-top: 1rem;
+}
+
+.found-content > .found-content-line:nth-of-type(2) {
+    margin-top: 1rem;
+}
+
+.found-content > div > button {
+    width: 100%;
+    border-radius: 10px;
+    padding: 12px 0px;
 }
 
 /* Media Queries */
@@ -407,5 +462,30 @@ nav {
     .homepage-slider {
         flex-direction: column-reverse !important;
     }
-
+    .found-container {
+        gap: 10px;
+    }
+    .found-img {
+        width: 40%;
+    }
+    .found-content {
+        width: 100%;
+    }
+    .found-content > h2 {
+        font-size: 16px;
+    }
+    .found-content > div > button {
+        font-size: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .slider-wrapper-container {
+        background: white;
+    }
+    .swiper-button-prev:after {
+       font-size: 24px !important;
+    }
+    .swiper-button-next:after {
+       font-size: 24px !important;
+    }
 }
