@@ -14,7 +14,7 @@
 }
 
 .text-brown {
-    color: var(--brown) !important;
+color: var(--brown) !important;
 }
 
 .text-primary-medium {
@@ -151,6 +151,9 @@ button {
 
 nav {
     height: 4.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .nav-logo {
@@ -227,9 +230,27 @@ nav {
     left: 0px;
     will-change: transform;
     padding: 0px 20px 5px 20px;
+    border-radius: 0px;
+    border-bottom: 1px solid var(--primary) !important;
 }
 
-.business-dropdown {
+.nav-search-dropdown {
+    font-size: 1.375rem;   
+}
+
+.nav-search-dropdown::placeholder {
+    color: var(--primary);
+}
+
+.nav-search-dropdown {
+    font-size: 1.375rem;   
+}
+
+.nav-search-dropdown:focus {
+    outline: 0 !important;
+}
+
+.navbar-dropdown {
     margin-left: 20%;
 }
 
