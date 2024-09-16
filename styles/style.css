@@ -265,13 +265,13 @@ nav {
 }
 
 .info-img:first-child {
-    width: 25dvw;
-    height: 30dvh;
+    width: 24rem;
+    height: 16rem;
 }
 
 .info-img:last-child {
-    width: 25dvw;
-    height: 58dvh;
+    width: 16rem;
+    height: 22rem;
 }
 
 .info-image-title {
@@ -488,7 +488,7 @@ nav {
 
 /* Media Queries */
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 768px) {
     .hero-header {
         min-height: 12rem;
     }
@@ -531,12 +531,12 @@ nav {
         font-size: 20px !important;
     }
     .info-img:first-child {
-        width: 30dvw;
-        height: 20dvh;
+        width: 8rem;
+        height: 6rem;
     }
     .info-img:last-child {
-        width: 25dvw;
-        height: 28dvh;
+        width: 6rem;
+        height: 12rem;
     }
     .info-community-title {
         font-size: 14px;
