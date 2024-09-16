@@ -138,6 +138,10 @@ button {
     border-bottom-right-radius: 0px !important;
 }
 
+.rounded-lg {
+    border-radius: 10px !important;
+}
+
 .rounded-left-0 {
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
@@ -392,7 +396,7 @@ nav {
 }
 
 .found-img {
-    width: 29%;
+    width: 22rem;
     object-fit: cover;
 }
 
@@ -662,6 +666,9 @@ nav {
     .custom-prev, .custom-next {
         background-size: 36px;
         top: 32% !important;
+    }
+    .btn {
+        font-size: 14px;
     }
     
 }
