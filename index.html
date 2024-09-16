@@ -47,9 +47,9 @@
                     </a>
                 </div>
             </div>
-            <div class="d-flex align-items-center gap-1 text-gray-dark px-lg-4 mx-1 mx-lg-0" >
+            <div class="d-flex align-items-center gap-0.5 text-gray-dark px-lg-4 mx-1 mx-lg-0" >
                 <a href="#" class="d-lg-none" >
-                    <img src="../assets/icons/heart-icons.svg" class="nav-icon" alt="heart-icon">
+                    <img src="./assets/images/heart.svg" class="heart-icon-mobile" alt="heart-icon">
                 </a>
                 <div>
                     <button type="button" data-toggle="dropdown" aria-expanded="false" class="text-gray-dark dropdown-toggle" >
@@ -86,7 +86,7 @@
                     </svg>
                     <span class="cart-count">0</span>
                 </a>
-                <div class="dropdown">
+                <div class="dropdown mx-1">
                     <button class="border-secondary language-dropdown rounded-lg px-2 py-0.5 d-flex align-items-center gap-0.5 dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                         <div class="drop-text" >EN</div>
                         <img src="../assets/icons/chevron-down-circle.svg" alt="arrow-down" class="drop-icon" >
@@ -110,10 +110,10 @@
         </main>
     </header>
 
-    <section class="bg-white py-4 px-3 p-lg-5" >
+    <section class="bg-white py-4 py-lg-3 px-3 px-lg-5" >
         <h2 class="font-hatton-medium info-image-title d-lg-none" >We know it’s not easy being a plant parent...</h2>
-        <div class="info-image-section py-5 p-lg-5 mt-4" >
-            <h2 class="text-center text-secondary d-none d-lg-block" >We know it’s not easy being a plant parent...</h2>
+        <div class="info-image-section py-5 p-lg-5 mt-3 mt-lg-4" >
+            <h2 class="text-center text-secondary d-none d-lg-block font-hatton-medium" >We know it’s not easy being a plant parent...</h2>
             <div class="d-flex align-items-center mt-lg-5 justify-content-center info-img-wrapper" >
                 <img src="./assets/images/info-img-1.png" alt="info-img" class="info-img" >
                 <img src="./assets/images/info-img-2.png" alt="info-img" class="info-img" >
@@ -121,10 +121,10 @@
         </div>
     </section>
 
-    <section class="bg-white py-4 px-3 p-lg-5 position-relative" >
+    <section class="bg-white px-3 px-lg-5 py-4 position-relative" >
         <h2 class="font-hatton-medium text-primary text-center info-community-title" >The Planteka Community helps you keep your plants alive</h2>
         <div class="community-card-wrapper-container" >
-            <div class="community-card-wrapper p-0 p-lg-4 container" >
+            <div class="community-card-wrapper p-0 px-lg-4 mt-3 mt-lg-4 container" >
                 <div id="community-card-1" class="community-card" >
                     <img src="./assets/images/card-1.png" alt="card-1" class="card-img" >
                     <a href="#" class="card-link" >Set up a video consultation From €15</a>
@@ -139,7 +139,7 @@
                 </div>
                 <div id="community-card-4" class="community-card" >
                     <img src="./assets/images/card-4.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link" >Attend a workshop From €35</a>
+                    <a href="#" class="card-link-last card-link" >Attend a workshop From €35</a>
                 </div>
             </div>
         </div>
@@ -150,9 +150,9 @@
         </a>
     </section>
 
-    <section class="bg-white py-4 px-3 p-lg-5 position-relative" >
+    <section class="bg-white px-3 px-lg-5 position-relative mt-2 mt-lg-4" >
         <h2 class="font-hatton-medium text-primary text-center info-community-title" >We’ve helped over 1,000 plant parents take care of their plants</h2>
-        <div class="p-2 p-lg-5 mt-4 slider-wrapper-container" >
+        <div class="px-2 p-lg-5 mt-lg-4 slider-wrapper-container" >
             <div class="swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide py-4 p-lg-4">
@@ -262,25 +262,27 @@
                   </div>
                  
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev custom-prev"></div>
+                <div class="swiper-button-next custom-next"></div>
               </div>
         </div>
     </section>
 
-    <section>
-        <div class="container pb-5 found-container d-flex align-items-lg-center justify-content-lg-center" >
+    <section class="py-lg-5" >
+      <div class="px-3 px-lg-5 mx-lg-5 " >
+        <div class="px-lg-4 found-container d-flex align-items-lg-center justify-content-lg-center" >
             <img src="./assets/images/planteka-found.png" alt="planteka-found" class="found-img" >
             <div class="found-content" >
                 <h2 class="font-hatton-medium text-primary-medium" >Planteka is founded by plan lover like you!</h2>
                 <div class="found-content-line d-none d-lg-block" >Planteka is a community of plant lovers and plant parents. </div>
                 <div class="found-content-line d-none d-lg-block" >Our mission is to help plant parents take better care of their plants. We´ve learnt that connecting with other plant lovers like yourself, is the best way to do that. </div>
-                <div class="d-flex flex-column flex-lg-row w-100 mt-3 mt-lg-5 gap-1" >
+                <div class="d-flex flex-column flex-lg-row w-100 mt-3 mt-lg-5 gap-2" >
                     <button class="btn btn-secondary found-btn w-100" >Join Our Community</button>
                     <button class="btn btn-secondary-light w-100" >The Planteka Story</button>
                 </div>
             </div>
         </div>
+      </div>
     </section>
 
     <footer>
@@ -380,10 +382,10 @@
             direction: 'horizontal',
             loop: true,
 
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
+          //  autoplay: {
+          //      delay: 2500,
+          //      disableOnInteraction: false,
+          //  },
 
             pagination: {
                 el: '.swiper-pagination',
