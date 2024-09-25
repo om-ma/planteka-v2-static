@@ -9,8 +9,16 @@
     --skin: #F0E6DC
 }
 
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
 .text-primary {
     color: var(--primary) !important;
+}
+
+.leading-loose {
+    line-height: 1.6;
 }
 
 .text-brown {
@@ -129,8 +137,16 @@ button {
     padding: 0.25rem;
 }
 
+.fw-semibold {
+    font-weight: 600 !important;
+}
+
 .border-secondary {
     border: 1px solid var(--secondary) !important;
+}
+
+.object-cover {
+    object-fit: cover;
 }
 
 .rounded-right-0 {
@@ -149,6 +165,10 @@ button {
 
 .text-uppercase {
     text-transform: uppercase;
+}
+
+.text-lg {
+    font-size: 21px;
 }
 
 /* Component Styles */
@@ -184,7 +204,18 @@ nav {
     background: url('../assets/images/hero-header.jpg');
     background-size: cover;
     width: 100%;
-    min-height: 26rem;
+    height: 26rem;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-services {
+    background: url('../assets/images/hero-services.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 26rem;
     display: flex;
     flex-direction: column ;
     justify-content: center;
@@ -192,7 +223,8 @@ nav {
 }
 
 .hero-title {
-    font-size: 48px;
+    font-size: 56px;
+    line-height: 1.5;
 }
 
 .hero-tagline {
@@ -266,6 +298,10 @@ nav {
 .info-image-section {
     background: #F0E6DC;
     border-radius: 20px;
+}
+
+.info-section-info {
+    font-size: 21px;
 }
 
 .info-img-wrapper {
@@ -534,6 +570,18 @@ nav {
     background-image: url('../assets/images/next.png');
   }
 
+  .make-it-green-button {
+    font-size: 26px;
+    font-family: 'Pangram';
+    font-weight: normal;
+  }
+
+  .make-it-green-leave {
+    bottom: -165px;
+    left: -90px;
+    width: 300px;
+  }
+
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
@@ -670,5 +718,22 @@ nav {
     .btn {
         font-size: 14px;
     }
-    
+    .hero-header, .hero-services {
+        height: 12rem;
+    }
+    .info-section-info {
+        font-size: 8px;
+    }
+    .make-it-green-title {
+        font-size: 14px;
+    }
+    .make-it-green-img {
+        width: 40%;
+        border-radius: 32px;
+    }
+    .make-it-green-leave {
+        bottom: -40px;
+        left: -25px;
+        width: 100px;
+      }
 }
