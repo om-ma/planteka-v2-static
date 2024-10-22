@@ -9,6 +9,12 @@
     --skin: #F0E6DC
 }
 
+/* WOrkShop CSS START */
+ .green_color {
+    color: #365D4A;
+ }
+/* WORKSHOP CSS STOp */
+
 body {
     -webkit-font-smoothing: antialiased;
 }
@@ -568,6 +574,12 @@ nav {
 /* Mobile Media Queries */
 
 @media screen and (max-width: 768px) {
+    /* Workshop css start */
+.card_overflow_scroll {
+    overflow: scroll;
+}
+/* Workshop css end */
+
     .hero-header {
         min-height: 12rem;
     }
