@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/pages/workshops_page.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -208,62 +209,65 @@
       <main class="hero-header text-center">
         <div class="hero-container">
           <h1 class="font-yeseva-one hero-title text-skin">
-            Dear Plant Parents, <br />
-            Please Stop Killing Your Plants!
+            Find the perfect plant <br>  workshop experience
           </h1>
           <p
-            class="mt-3 text-skin font-poppins-medium hero-tagline d-none d-lg-block"
+            class="mt-3 text-skin font-poppins-medium hero-tagline header-info-description"
           >
-            The Planteka Community Cares!
+            Create and learn with our plant community.
           </p>
-          <button class="btn btn-secondary mt-4 header-button">
-            Call a plant doctor today!
+          <button class="btn btn-secondary mt-1 mt-lg-4 header-button px-lg-4">
+            Book a workshop with us
           </button>
         </div>
       </main>
     </header>
 
-
-
-
-
-
-
-
-
-
-
-
     <section class="bg-white py-3 px-3 px-lg-5">
-      <h2 class="font-yeseva-one info-image-title-services d-lg-none mx-4">
-        Choose your workshop location:
-      </h2>
-      <div class="info-image-section">
-        <div class="mx-lg-5 p-4 d-flex py-lg-5 p-lg-5 mt-lg-4">
+      <div class="info-image-section py-3 py-lg-0">
+        <h6 class="font-yeseva-one info-image-title-services d-lg-none mx-4 text-secondary text-center">
+          Choose your workshop location: 
+        </h6>
+        <div class="mx-lg-5 px-4 d-flex py-lg-4 mt-lg-4">
           <img
-            src="./assets/images/services-section-1.png"
+            src="./assets/images/workshops-section-1.png"
             class="w-25 object-cover rounded-lg"
           />
           <div class="mx-2 text-brown text-lg-center mx-lg-5 px-lg-3">
-            <h3
+            <h1
               class="text-center text-secondary leading-loose d-none d-lg-block font-yeseva-one mx-lg-5"
             >
               Choose your workshop location:
-            </h3>
+            </h1>
             <div class="mt-lg-3 info-section-info">
-              <div class="d-none d-lg-block"><button>Barcelona</button></div>
-              <div class="mt-lg-3">
-                From building a terrarium to urban gardening -
+              <div class="workshops-dropdown d-flex justify-content-lg-center">
+                <div class="dropdown">
+                  <button
+                    class="border border-primary workshops-dropdown-menu rounded-lg px-2 py-0.5 d-flex align-items-center gap-0.5 dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="text-primary drop-text">Barcelona</div>
+                    <img
+                      src="../assets/icons/chevron-down-circle.svg"
+                      alt="arrow-down"
+                      class="drop-icon"
+                    />
+                  </button>
+                  <div class="dropdown-menu mr-6">
+                    <a class="dropdown-item" href="#">French</a>
+                    <a class="dropdown-item" href="#">Spanish</a>
+                    <a class="dropdown-item" href="#">German</a>
+                  </div>
+                </div>
               </div>
-              <div class="mt-lg-3">
-                we’ve got your next plant workshop covered
+              <div class="mt-lg-3 info-section-text mt-2">
+                From building a terrarium to urban gardening <br class="d-none d-lg-block" > we’ve got your next plant workshop covered
               </div>
             </div>
-            <div class="mt-3 mt-lg-5 info-section-info">
-              Our gift card also makes the perfect gift for the
-            </div>
-            <div class="mt-lg-2 info-section-info">
-              special plant lovers in your life.
+            <div class="mt-2 mt-lg-5 info-section-text">
+              Our gift card also makes the perfect gift for the <br class="d-none d-lg-block" > special plant lovers in your life.
             </div>
           </div>
         </div>
@@ -273,26 +277,23 @@
 
     <section class="bg-white px-3 py-4 position-relative mt-lg-5" >
       <h1 class="font-yeseva-one text-primary text-center info-community-title mx-5" >Our Best-Sellers</h1>
-      <div class="mt-lg-3 info-section-info text-lg-center">
-        <div class="mt-lg-3">
+      <div class="mt-lg-3 info-section-info text-center">
+        <div class="mt-lg-4 info-section-text mx-5 px-4">
           Discover our most popular workshops, where creativity meets nature!
         </div>
-        <div class="mt-lg-3">
-          These are Planteka’s top-rated workshops and experiences. 
-        </div>
-        <div class="mt-lg-3">
-          You can also buy a gift card for the plant lovers in your life. 
+        <div class="mt-3 info-section-text">
+          These are Planteka’s top-rated workshops and experiences. <br> You can also buy a gift card for the plant lovers in your life. 
         </div>
       </div>
-      <ul class="border-0 nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
-        <li class="nav-item green_color" role="presentation">
-          <button class="nav-link active border-0" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">MADRID</button>
+      <ul class="mt-lg-5 border-0 nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item text-primary" role="presentation">
+          <button class="nav-link nav-link-tab active border-0" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">MADRID</button>
         </li>
-        <li class="nav-item green_color" role="presentation">
-          <button class="nav-link border-0" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">BARCELONA</button>
+        <li class="nav-item text-primary" role="presentation">
+          <button class="nav-link nav-link-tab border-0" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">BARCELONA</button>
         </li>
-        <li class="nav-item green_color" role="presentation">
-          <button class="nav-link border-0" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">SEE ALL</button>
+        <li class="nav-item text-primary" role="presentation">
+          <button class="nav-link nav-link-tab border-0" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">SEE ALL</button>
         </li>
       </ul>
       <div class="tab-content d-flex justify-content-center" id="myTabContent">
@@ -380,26 +381,23 @@
       </div>
     </section>
 
-
-
-
-
-    <section class="bg-white px-3 py-4 position-relative mt-lg-5" >
+    <section class="bg-white px-3 py-4 position-relative mt-lg-5 position-relative" >
+      <img src="./assets/images/leave-illustration-3.svg" alt="leave-illustration" class="workshops-leave-1" >
       <h1 class="font-yeseva-one text-primary text-center info-community-title mx-5" >In-studio Workshops</h1>
       <div class="mt-lg-3 info-section-info text-lg-center">
-        <div class="mt-lg-3">
+        <div class="mt-lg-4 info-section-text text-center">
           Interactive plant workshops in groups.
         </div>
       </div>
-      <ul class="border-0 nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
-        <li class="nav-item green_color" role="presentation">
-          <button class="nav-link active border-0" id="home-tab" data-toggle="tab" data-target="#home3" type="button" role="tab" aria-controls="home" aria-selected="true">MADRID</button>
+      <ul class="mt-lg-5 border-0 nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item text-primary" role="presentation">
+          <button class="nav-link nav-link-tab active border-0" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">MADRID</button>
         </li>
-        <li class="nav-item green_color" role="presentation">
-          <button class="nav-link border-0" id="profile-tab" data-toggle="tab" data-target="#profile3" type="button" role="tab" aria-controls="profile" aria-selected="false">BARCELONA</button>
+        <li class="nav-item text-primary" role="presentation">
+          <button class="nav-link nav-link-tab border-0" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">BARCELONA</button>
         </li>
-        <li class="nav-item green_color" role="presentation">
-          <button class="nav-link border-0" id="contact-tab" data-toggle="tab" data-target="#contact3" type="button" role="tab" aria-controls="contact" aria-selected="false">SEE ALL</button>
+        <li class="nav-item text-primary" role="presentation">
+          <button class="nav-link nav-link-tab border-0" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">SEE ALL</button>
         </li>
       </ul>
       <div class="tab-content d-flex justify-content-center" id="myTabContent">
@@ -423,7 +421,7 @@
                     <a href="#" class="card-link-last card-link" >Book a plant “day-care” From €23</a>
                 </div>
             </div>
-            <div class="community-card-wrapper p-0 mt-3 mt-lg-4 container" >
+            <div class="d-none d-lg-flex community-card-wrapper p-0 mt-3 mt-lg-4 container" >
               <div id="community-card-1" class="community-card" >
                   <img src="./assets/images/card-7.png" alt="card-1" class="card-img" >
                   <a href="#" class="card-link" >Set up a video consultation From €20</a>
@@ -437,145 +435,36 @@
                   <a href="#" class="card-link" >Book a plant-sitter From €25</a>
               </div>
               <div id="community-card-4" class="community-card" >
-                  <img src="./assets/images/card-6.png" alt="card-1" class="card-img" >
-                  <a href="#" class="card-link-last card-link" >Book a plant “day-care” From €23</a>
+                  <img src="./assets/images/planteka-leave.png" alt="card-1" class="card-img" >
+                  <button class="btn btn-primary py-3 mx-4" >See More</button>
               </div>
-          </div>
-        </div>
-        </div>
-        <div class="tab-pane fade card_overflow_scroll" id="profile3" role="tabpanel" aria-labelledby="profile-tab">
-          <div class="community-card-wrapper-container mt-lg-4" >
-            <div class="community-card-wrapper p-0 mt-3 mt-lg-4 container" >
-                <div id="community-card-1" class="community-card" >
-                    <img src="./assets/images/card-7.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link" >Set up a video consultation From €20</a>
-                </div>
-                <div id="community-card-2" class="community-card" >
-                    <img src="./assets/images/card-5.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link" >Book a home visit From €36</a>
-                </div>
-                <div id="community-card-3" class="community-card" >
-                    <img src="./assets/images/card-8.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link" >Book a plant-sitter From €25</a>
-                </div>
-                <div id="community-card-4" class="community-card" >
-                    <img src="./assets/images/card-6.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link-last card-link" >Book a plant “day-care” From €23</a>
-                </div>
             </div>
-            <div class="community-card-wrapper p-0 mt-3 mt-lg-4 container" >
-              <div id="community-card-1" class="community-card" >
-                  <img src="./assets/images/card-7.png" alt="card-1" class="card-img" >
-                  <a href="#" class="card-link" >Set up a video consultation From €20</a>
-              </div>
-              <div id="community-card-2" class="community-card" >
-                  <img src="./assets/images/card-5.png" alt="card-1" class="card-img" >
-                  <a href="#" class="card-link" >Book a home visit From €36</a>
-              </div>
-              <div id="community-card-3" class="community-card" >
-                  <img src="./assets/images/card-8.png" alt="card-1" class="card-img" >
-                  <a href="#" class="card-link" >Book a plant-sitter From €25</a>
-              </div>
-              <div id="community-card-4" class="community-card" >
-                  <img src="./assets/images/card-6.png" alt="card-1" class="card-img" >
-                  <a href="#" class="card-link-last card-link" >Book a plant “day-care” From €23</a>
-              </div>
-          </div>
-        </div>
-        </div>
-        <div class="tab-pane fade card_overflow_scroll" id="contact3" role="tabpanel" aria-labelledby="contact-tab">
-          <div class="community-card-wrapper-container mt-lg-4" >
-            <div class="community-card-wrapper p-0 mt-3 mt-lg-4 container" >
-                <div id="community-card-1" class="community-card" >
-                    <img src="./assets/images/card-7.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link" >Set up a video consultation From €20</a>
-                </div>
-                <div id="community-card-2" class="community-card" >
-                    <img src="./assets/images/card-5.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link" >Book a home visit From €36</a>
-                </div>
-                <div id="community-card-3" class="community-card" >
-                    <img src="./assets/images/card-8.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link" >Book a plant-sitter From €25</a>
-                </div>
-                <div id="community-card-4" class="community-card" >
-                    <img src="./assets/images/card-6.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link-last card-link" >Book a plant “day-care” From €23</a>
-                </div>
-            </div>
-            <div class="community-card-wrapper p-0 mt-3 mt-lg-4 container" >
-              <div id="community-card-1" class="community-card" >
-                  <img src="./assets/images/card-7.png" alt="card-1" class="card-img" >
-                  <a href="#" class="card-link" >Set up a video consultation From €20</a>
-              </div>
-              <div id="community-card-2" class="community-card" >
-                  <img src="./assets/images/card-5.png" alt="card-1" class="card-img" >
-                  <a href="#" class="card-link" >Book a home visit From €36</a>
-              </div>
-              <div id="community-card-3" class="community-card" >
-                  <img src="./assets/images/card-8.png" alt="card-1" class="card-img" >
-                  <a href="#" class="card-link" >Book a plant-sitter From €25</a>
-              </div>
-              <div id="community-card-4" class="community-card" >
-                  <img src="./assets/images/card-6.png" alt="card-1" class="card-img" >
-                  <a href="#" class="card-link-last card-link" >Book a plant “day-care” From €23</a>
-              </div>
           </div>
         </div>
         </div>
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="mt-4 d-lg-none" >
+      <button class="see-more-button" >See More</button>
+    </div>
 
     <section class="bg-white px-3 py-4 position-relative mt-lg-5" >
       <h1 class="font-yeseva-one text-primary text-center info-community-title mx-5" >At-home gardening courses</h1>
       <div class="mt-lg-3 info-section-info text-lg-center">
-        <div class="mt-lg-3">
-          Enjoy the flexibility of learning from home, at your convenience, with
-        </div>
-        <div class="mt-lg-3">
-          gardening courses that are practical and personalised for you.
+        <div class="mt-lg-3 info-section-text text-center z-10 position-relative">
+          Enjoy the flexibility of learning from home, at your convenience, with <br class="d-none d-lg-block" > gardening courses that are practical and personalised for you.
         </div>
       </div>
-      <ul class="border-0 nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
-        <li class="nav-item green_color" role="presentation">
-          <button class="nav-link active border-0" id="home-tab" data-toggle="tab" data-target="#home2" type="button" role="tab" aria-controls="home" aria-selected="true">MADRID</button>
+      <ul class="mt-lg-5 border-0 nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item text-primary" role="presentation">
+          <button class="nav-link nav-link-tab active border-0" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">MADRID</button>
         </li>
-        <li class="nav-item green_color" role="presentation">
-          <button class="nav-link border-0" id="profile-tab" data-toggle="tab" data-target="#profile2" type="button" role="tab" aria-controls="profile" aria-selected="false">BARCELONA</button>
+        <li class="nav-item text-primary" role="presentation">
+          <button class="nav-link nav-link-tab border-0" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">BARCELONA</button>
         </li>
-        <li class="nav-item green_color" role="presentation">
-          <button class="nav-link border-0" id="contact-tab" data-toggle="tab" data-target="#contact2" type="button" role="tab" aria-controls="contact" aria-selected="false">SEE ALL</button>
+        <li class="nav-item text-primary" role="presentation">
+          <button class="nav-link nav-link-tab border-0" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">ONLINE</button>
         </li>
       </ul>
       <div class="tab-content d-flex justify-content-center" id="myTabContent">
@@ -599,62 +488,9 @@
                     <a href="#" class="card-link-last card-link" >Book a plant “day-care” From €23</a>
                 </div>
             </div>
+          </div>
         </div>
         <a href="#community-card-4" class="cards-mobile-scroller d-flex align-items-center justify-content-center d-lg-none"  >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-            </svg>              
-        </a>
-        </div>
-        <div class="tab-pane fade card_overflow_scroll" id="profile2" role="tabpanel" aria-labelledby="profile-tab">
-          <div class="community-card-wrapper-container mt-lg-4" >
-            <div class="community-card-wrapper p-0 mt-3 mt-lg-4 container" >
-                <div id="community-card-1" class="community-card" >
-                    <img src="./assets/images/card-7.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link" >Set up a video consultation From €20</a>
-                </div>
-                <div id="community-card-2" class="community-card" >
-                    <img src="./assets/images/card-5.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link" >Book a home visit From €36</a>
-                </div>
-                <div id="community-card-3" class="community-card" >
-                    <img src="./assets/images/card-8.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link" >Book a plant-sitter From €25</a>
-                </div>
-                <div id="community-card-8" class="community-card" >
-                    <img src="./assets/images/card-6.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link-last card-link" >Book a plant “day-care” From €23</a>
-                </div>
-            </div>
-        </div>
-        <a href="#community-card-8" class="cards-mobile-scroller d-flex align-items-center justify-content-center d-lg-none"  >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-            </svg>              
-        </a>
-        </div>
-        <div class="tab-pane fade card_overflow_scroll" id="contact2" role="tabpanel" aria-labelledby="contact-tab">
-          <div class="community-card-wrapper-container mt-lg-4" >
-            <div class="community-card-wrapper p-0 mt-3 mt-lg-4 container" >
-                <div id="community-card-1" class="community-card" >
-                    <img src="./assets/images/card-7.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link" >Set up a video consultation From €20</a>
-                </div>
-                <div id="community-card-2" class="community-card" >
-                    <img src="./assets/images/card-5.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link" >Book a home visit From €36</a>
-                </div>
-                <div id="community-card-3" class="community-card" >
-                    <img src="./assets/images/card-8.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link" >Book a plant-sitter From €25</a>
-                </div>
-                <div id="community-card-10" class="community-card" >
-                    <img src="./assets/images/card-6.png" alt="card-1" class="card-img" >
-                    <a href="#" class="card-link-last card-link" >Book a plant “day-care” From €23</a>
-                </div>
-            </div>
-        </div>
-        <a href="#community-card-10" class="cards-mobile-scroller d-flex align-items-center justify-content-center d-lg-none"  >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>              
@@ -663,9 +499,133 @@
       </div>
     </section>
 
+    <div class="mt-4 d-lg-none" >
+      <button class="see-more-button" >See More</button>
+    </div>
 
+    <section class="bg-white px-3 px-lg-5 position-relative mt-5 pb-5 " >
+      <h1 class="font-yeseva-one text-primary text-center info-community-title mx-5" >We’ve helped over 1,000 plant parents take care of their plants.</h1>
+      <div class="px-2 p-lg-5 mt-lg-4 slider-wrapper-container" >
+          <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide overflow-hidden bg-skin rounded-lg mt-3 py-2 p-lg-4">
+                  <div class="d-flex flex-lg-row-reverse align-items-center justify-content-center" >
+                      <div class="slider-img-container bg-skin p-3 p-lg-0 rounded-lg" >
+                          <img src="./assets/images/slider-img.png" alt="slider-img" >
+                      </div>
+                      <div class="slider-content-container w-50 mt-3 mt-lg-0" >  
+                         <div class="slider-content-wrapper" >
+                              <div class="text-primary d-flex align-items-center" >
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                              </div>
+                              <div class="text-center" >
+                                  <div class="slide-content-header-line d-none d-lg-block" >I did two workshops at Planteka, and I had a beautiful experience thanks to all the people who organised it! :)</div>
+                                  <div class="slide-content-header-line d-lg-none" >“One of the most relaxing and refreshing activities we have done together as a team. It was very interesting with the plant care workshop and we used the plants to decorate our office".</div>
+                                  <div class="d-none d-lg-block" >
+                                      <p class="slide-content-footer-tagline" >Kiara <a href="#">Terrarium Workshop</a></p>
+                                      <p class="slide-content-footer-tagline" >More <a href="#">Google Reviews</a></p>
+                                  </div>
+                              </div>
+                         </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide overflow-hidden bg-skin rounded-lg mt-3 py-2 p-lg-4">
+                  <div class="d-flex flex-lg-row-reverse align-items-center justify-content-center" >
+                      <div class="slider-img-container bg-skin p-3 p-lg-0 rounded-lg" >
+                          <img src="./assets/images/slider-img.png" alt="slider-img" >
+                      </div>
+                      <div class="slider-content-container w-50 mt-3 mt-lg-0" >  
+                         <div class="slider-content-wrapper" >
+                              <div class="text-primary d-flex align-items-center" >
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                              </div>
+                              <div class="text-center" >
+                                  <div class="slide-content-header-line d-none d-lg-block" >I did two workshops at Planteka, and I had a beautiful experience thanks to all the people who organised it! :)</div>
+                                  <div class="slide-content-header-line d-lg-none" >“One of the most relaxing and refreshing activities we have done together as a team. It was very interesting with the plant care workshop and we used the plants to decorate our office".</div>
+                                  <div class="d-none d-lg-block" >
+                                      <p class="slide-content-footer-tagline" >Kiara <a href="#">Terrarium Workshop</a></p>
+                                      <p class="slide-content-footer-tagline" >More <a href="#">Google Reviews</a></p>
+                                  </div>
+                              </div>
+                         </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide overflow-hidden bg-skin rounded-lg mt-3 py-2 p-lg-4">
+                  <div class="d-flex flex-lg-row-reverse align-items-center justify-content-center" >
+                      <div class="slider-img-container bg-skin p-3 p-lg-0 rounded-lg" >
+                          <img src="./assets/images/slider-img.png" alt="slider-img" >
+                      </div>
+                      <div class="slider-content-container w-50 mt-3 mt-lg-0" >  
+                         <div class="slider-content-wrapper" >
+                              <div class="text-primary d-flex align-items-center" >
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                  </svg>
+                              </div>
+                              <div class="text-center" >
+                                  <div class="slide-content-header-line d-none d-lg-block" >I did two workshops at Planteka, and I had a beautiful experience thanks to all the people who organised it! :)</div>
+                                  <div class="slide-content-header-line d-lg-none" >“One of the most relaxing and refreshing activities we have done together as a team. It was very interesting with the plant care workshop and we used the plants to decorate our office".</div>
+                                  <div class="d-none d-lg-block" >
+                                      <p class="slide-content-footer-tagline" >Kiara <a href="#">Terrarium Workshop</a></p>
+                                      <p class="slide-content-footer-tagline" >More <a href="#">Google Reviews</a></p>
+                                  </div>
+                              </div>
+                         </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev custom-prev"></div>
+              <div class="swiper-button-next custom-next"></div>
+            </div>
+      </div>
+      <div class="d-flex d-lg-none" >
+          <button class="w-100 mx-3 rounded-lg btn btn-secondary mt-3 py-2 px-5 make-it-green-button" >Download Case Study</button>
+      </div>
+  </section>
 
-  
     <footer>
       <div
         id="mc_embed_signup"
