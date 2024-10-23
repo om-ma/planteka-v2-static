@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/pages/community.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Planteka - Business - Services</title>
+  </head>
+  <body class="font-poppins-regular w-100 overflow-x-hidden">
+    <nav class="bg-white border-bottom border-primary py-3 px-1 px-lg-3">
+      <div class="d-flex aling-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-0.5">
+          <div class="d-flex align-items-center gap-0.5 pe-2 px-lg-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 18.855 16.808"
+              class="d-lg-none text-gray-dark"
+            >
+              <g fill="currentColor">
+                <path d="m0 0h18.855v2h-18.855z"></path>
+                <path
+                  d="m0 0h18.855v2h-18.855z"
+                  transform="translate(0 7.404)"
+                ></path>
+                <path
+                  d="m0 0h18.855v2h-18.855z"
+                  transform="translate(0 14.808)"
+                ></path>
+              </g>
+            </svg>
+            <a href="/">
+              <img
+                src="../assets/images/planteka-logo.svg"
+                class="nav-logo"
+                alt="logo"
+              />
+            </a>
+          </div>
+          <div
+            class="d-none d-lg-flex align-items-center gap-1 font-poppins-medium"
+          >
+            <a href="#" class="text-primary nav-item">Services</a>
+            <a href="#" class="text-primary nav-item">Workshops</a>
+            <div>
+              <button
+                class="text-primary dropdown-toggle nav-item"
+                type="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                For Business
+              </button>
+              <div class="dropdown-menu nav-dropdown">
+                <div class="navbar-dropdown">
+                  <div class="d-flex gap-2">
+                    <a class="nav-item text-primary px-3" href="#">Services</a>
+                    <a class="nav-item text-primary px-3" href="#"
+                      >Team-Building Workshops</a
+                    >
+                    <a class="nav-item text-primary px-3" href="#"
+                      >Contact Us</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="text-primary nav-item">Community</a>
+            <a href="#" class="d-flex align-items-center">
+              <img src="../assets/icons/heart-icons.svg" alt="heart-icon" />
+              <span class="text-primary mx-2 nav-item">Plant Doctor</span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="d-flex align-items-center gap-0.5 text-gray-dark px-lg-4 mx-1 mx-lg-0"
+        >
+          <a href="#" class="d-lg-none">
+            <img
+              src="./assets/images/heart.svg"
+              class="heart-icon-mobile"
+              alt="heart-icon"
+            />
+          </a>
+          <div>
+            <button
+              type="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+              class="text-gray-dark dropdown-toggle"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="nav-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </button>
+            <div class="dropdown-menu nav-dropdown">
+              <div class="d-flex align-items-center">
+                <input
+                  type="text"
+                  placeholder="SEARCH"
+                  class="border-0 w-100 p-4 nav-search-dropdown"
+                />
+                <button class="text-brown dropdown-toggle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="nav-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="text-gray-dark">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="nav-icon"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 22.964 22.964"
+              class="spree-icon d-inline-block"
+            >
+              <clipPath>
+                <path d="m0 0h22.964v22.964h-22.964z"></path>
+              </clipPath>
+              <g clip-path="url(#a)">
+                <path
+                  d="m21.34 16.507a14.758 14.758 0 0 0 -3.6-2.163 19.579 19.579 0 0 1 -2.765-1.544 9.709 9.709 0 0 0 2.407-5.837 9.174 9.174 0 0 0 -.7-4.212c-.637-1.251-2.053-2.751-5.2-2.751s-4.564 1.5-5.2 2.751a9.164 9.164 0 0 0 -.7 4.212 9.7 9.7 0 0 0 2.407 5.837 19.483 19.483 0 0 1 -2.766 1.544 14.769 14.769 0 0 0 -3.6 2.163 7.059 7.059 0 0 0 -1.623 4.514 1.913 1.913 0 0 0 1.913 1.943h19.137a1.914 1.914 0 0 0 1.914-1.943 7.061 7.061 0 0 0 -1.624-4.514zm.051 4.878a.478.478 0 0 1 -.341.143h-19.137a.478.478 0 0 1 -.34-.143.485.485 0 0 1 -.138-.343 5.731 5.731 0 0 1 1.2-3.52 14.581 14.581 0 0 1 3.227-1.9 15.74 15.74 0 0 0 3.109-1.785l.969-.916-.84-1.027a8.306 8.306 0 0 1 -2.083-4.931 7.934 7.934 0 0 1 .549-3.563c.658-1.3 1.974-1.962 3.916-1.962s3.258.662 3.918 1.962a7.938 7.938 0 0 1 .55 3.566 8.3 8.3 0 0 1 -2.086 4.931l-.841 1.034.969.915a15.774 15.774 0 0 0 3.108 1.782 14.517 14.517 0 0 1 3.227 1.9 5.593 5.593 0 0 1 1.2 3.52.478.478 0 0 1 -.136.338z"
+                  fill="currentColor"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <a class="position-relative text-gray-dark">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="nav-icon"
+              viewBox="0 0 82.6 91.7"
+            >
+              <g fill="currentColor">
+                <path
+                  d="M33.6 73.3c0 0 0 0 0 0 -5 0-9.2 4.1-9.2 9.2 0 5 4.1 9.2 9.2 9.2 5 0 9.2-4.1 9.2-9.2 0 0 0 0 0 0 0-5-4.2-9.2-9.2-9.2Zm0 12.4c0 0 0 0 0 0 -1.8 0-3.3-1.5-3.3-3.3 0-1.8 1.5-3.3 3.3-3.3 1.8 0 3.3 1.5 3.3 3.3 0 1.8-1.5 3.3-3.3 3.3Z"
+                ></path>
+                <path
+                  d="M64.3 73.3c-5 0-9.2 4.1-9.2 9.2 0 5 4.1 9.2 9.2 9.2 5 0 9.2-4.1 9.2-9.2 0 0 0 0 0 0 0-5-4.2-9.2-9.2-9.2Zm0 12.4c-1.8 0-3.3-1.5-3.3-3.3 0-1.8 1.5-3.3 3.3-3.3 1.8 0 3.3 1.5 3.3 3.3 0 1.8-1.5 3.3-3.3 3.3Z"
+                ></path>
+                <path
+                  d="M82 31.3c-0.6-0.7-1.4-1.2-2.3-1.2l-59.2 0 -2.5-9.6c-0.3-1.3-1.5-2.2-2.9-2.2l-12.2 0c-1.6 0-3 1.3-3 3 0 1.6 1.3 3 3 3l9.9 0 2.5 9.5c0 0.1 0 0.1 0 0.2l9.2 35.3c0.3 1.3 1.5 2.2 2.9 2.2l43.1 0c1.3 0 2.5-0.9 2.9-2.2l9.2-35.3c0.2-0.9 0-1.8-0.5-2.6Zm-13.8 34.2l-38.5 0 -7.6-29.4 53.8 0 -7.6 29.4Z"
+                ></path>
+              </g>
+            </svg>
+            <span class="cart-count">0</span>
+          </a>
+          <div class="dropdown mx-1">
+            <button
+              class="border-secondary language-dropdown rounded-lg px-2 py-0.5 d-flex align-items-center gap-0.5 dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div class="drop-text">EN</div>
+              <img
+                src="../assets/icons/chevron-down-circle.svg"
+                alt="arrow-down"
+                class="drop-icon"
+              />
+            </button>
+            <div class="dropdown-menu mr-6">
+              <a class="dropdown-item" href="#">French</a>
+              <a class="dropdown-item" href="#">Spanish</a>
+              <a class="dropdown-item" href="#">German</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- code for header -->
+
+    <header>
+      <main class="hero-services text-center">
+        <div class="hero-container">
+          <h1 class="font-yeseva-one hero-title text-skin">
+            Planteka Community, <br />
+            We are better together
+          </h1>
+          <p
+            class="mt-3 text-skin font-poppins-medium hero-tagline d-none d-lg-block"
+          >
+            Find care, on the Planteka community today
+          </p>
+          <button class="btn btn-secondary mt-4 header-button">
+            Sign up to our newsletter
+          </button>
+        </div>
+      </main>
+    </header>
+
+    <!-- header is closed here -->
+
+    <section
+      class="info-image-section px-4 px-lg-5 py-4 py-lg-5 position-relative mt-2 mt-lg-5"
+    >
+      <h1 class="font-yeseva-one text-primary text-center info-community-title">
+        At Planteka, we cultivate community like a well-tended gardern
+      </h1>
+      <div
+        class="d-flex flex-column flex-lg-row mt-3 mt-lg-5 why-planteka-info-cards"
+      >
+        <div
+          class="w-100 d-flex flex-lg-column align-items-start align-items-lg-center text-lg-center px-lg-5"
+        >
+          <img src="./assets/icons/smile-face.svg" alt="smile-face" class="" />
+          <div class="mx-2 mx-lg-0">
+            <h5 class="font-poppins-semibold text-primary mt-lg-2">25,000+</h5>
+            <p class="mt-1 px-lg-4 leading-loose">
+              Join our facebook forums and chat to plant parents and experts in
+              Barcelona and Madrid.
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-100 d-flex flex-lg-column align-items-start align-items-lg-center text-lg-center px-lg-5"
+        >
+          <img src="./assets/icons/flower-flow.svg" alt="smile-face" class="" />
+          <div class="mx-2 mx-lg-0">
+            <h5 class="font-poppins-semibold text-primary mt-lg-2">30+</h5>
+            <p class="mt-1 px-lg-4 leading-loose">
+              discove planteka verified shops and vendors near you. we love
+              them, and you will too!
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-100 d-flex flex-lg-column align-items-start align-items-lg-center text-lg-center px-lg-5"
+        >
+          <img
+            src="./assets/icons/groups-person.svg"
+            alt="smile-face"
+            class=""
+          />
+          <div class="mx-2 mx-lg-0">
+            <h5 class="font-poppins-semibold text-primary mt-lg-2">50+</h5>
+            <p class="mt-1 px-lg-4 leading-loose">
+              we connect you with the right expert at the right time to help you
+              care for your plants, online or in Barcelona and Madrid.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-3 px-3 px-lg-5">
+     
+      <h2 class="font-yeseva-one info-image-title d-lg-none mx-4">
+        Join the plantek community online
+      </h2>
+      <div>
+        <div class="mx-lg-5 p-4 d-flex py-lg-5 p-lg-5 mt-lg-4">
+          <div class="mx-2 text-brown text-lg-center mx-lg-5 px-lg-5">
+            <h3
+              class="text-center text-secondary leading-loose d-none d-lg-block font-yeseva-one mx-lg-5"
+            >
+              Did you know that green spaces generate positive business returns?
+            </h3>
+            <div class="mt-lg-3 info-section-info">
+              <div>
+                <p>
+                  connect with more then 25,000 plant lovers from Barcelona and
+                  Madrid on Plantek Facebook's Fourms
+                </p>
+              </div>
+              <div>
+                <p class="mt-3">
+                  ask <strong>advice</strong>, share
+                  <strong>plant care tips</strong>, make friends and immerse
+                  yourself in a community of plant lovers.
+                </p>
+              </div>
+            </div>
+            <div class="mt-3 mt-lg-5 d-flex flex-lg-row bg-green fl">
+              <div class=""></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="info-image-section px-4 px-lg-5 py-4 py-lg-5 position-relative mt-2 mt-lg-5 "
+    >
+      <h1 class="font-yeseva-one text-primary text-center info-community-title">
+        Find trusted Planteka partner near you
+      </h1>
+      <div class="mx-2 text-brown text-lg-center mx-lg-5 px-lg-5">
+        <div class="mt-lg-3 info-section-info">
+          <div>
+            <p>
+              Discover Planteka verified shops and vendors near you. We love
+              them and you will too.
+            </p>
+          </div>
+          <div>
+            <p class="mt-3">
+              Want to get <strong>exclusive % discount codes </strong>to use
+              with our vendors?<br />
+              <strong>Enter you Email</strong> to subscribe to our newsletter
+              and unlock exclusive discount codes with our partners, straight to
+              your inbox
+            </p>
+          </div>
+        </div>
+        <div class="mt-3">
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="e.g.  TomGreen@gmail.com"
+            class="p-lg-2 w-50 input-radious w-xs-500"
+          /><span>Add icon</span>
+        </div>
+      </div>
+      
+      <div
+        class="d-flex flex-column flex-lg-row mt-3 mt-lg-5 why-planteka-info-cards"
+      >
+        <div
+  class="w-100 d-flex flex-lg-column align-items-start align-items-lg-center text-lg-center px-lg-5 flex-wrap"
+>
+  <!-- Inline List -->
+  <ul class="list-inline mb-2">
+    <li class="list-inline-item">Barcelona</li>
+    <li class="list-inline-item">Madrid</li>
+    <li class="list-inline-item">Online</li>
+  </ul>
+
+  <!-- Horizontal Rule -->
+  <hr class="w-100 my-3" style="height: 3px;">
+
+  <!-- Search Box with Icon -->
+  <div class="mt-2 d-flex align-items-center w-100">
+    <input
+      type="search"
+      placeholder="e.g. exotic plants, fertilizer"
+      class="input-radious w-100 p-2 border border-secondary rounded"
+      style="max-width: 400px;"
+    />
+    <span class="ms-2">icon</span>
+  </div>
+
+  <!-- Gardenval Section -->
+  <div
+    class="mt-3 d-flex flex-column align-items-start text-lg-start bg-white w-100 rounded-lg border border-3 border-primary p-3"
+    style="max-width: 500px;"
+  >
+    <h4 class="mb-2">Gardenval</h4>
+    <span class="d-flex gap-1">
+      <button class="btn btn-primary">1</button>
+      <button class="btn btn-secondary">2</button>
+      <button class="btn btn-success">3</button>
+    </span>
+  </div>
+
+   <div
+    class="mt-3 d-flex flex-column align-items-start text-lg-start bg-white w-100 rounded-lg border border-3 border-primary p-3"
+    style="max-width: 500px;"
+  >
+    <h4 class="mb-2">Speakinplants</h4>
+    <span class="d-flex gap-1">
+      <button class="btn btn-primary">1</button>
+      <button class="btn btn-secondary">2</button>
+      <button class="btn btn-success">3</button>
+    </span>
+  </div>
+</div>
+
+        
+        <div
+  class="w-100 d-flex flex-lg-column align-items-start align-items-lg-center text-lg-center px-lg-5 bg-white mt-2"
+  style="min-height: 100px;" 
+>
+  <a href="#" class="btn btn-link">Add Map Link</a>
+</div>
+
+      </div>
+    </section>
+
+
+   <section class="px-4 px-lg-5 py-4 py-lg-5 position-relative mt-2 mt-lg-5">
+  <h1 class="font-yeseva-one text-primary text-center info-community-title">
+    Get plant care knowledge on our blog
+  </h1>
+  <div class="d-flex flex-column flex-lg-row mt-3 mt-lg-5 justify-content-center">
+    <div class="card w-100 w-lg-33 d-flex flex-column align-items-start align-items-lg-center text-lg-center px-lg-5 mb-4 mb-lg-0">
+      <img src="./assets/images/card-1.png" alt="smile-face" class="img-fluid" />
+      <div class="mx-2 mx-lg-0">
+        
+        <p class="mt-1 px-lg-4 leading-loose">
+          Join our Facebook forums and chat with plant parents and experts in Barcelona and Madrid.
+        </p>
+      </div>
+    </div>
+
+    <div class="card w-100 w-lg-33 d-flex flex-column align-items-start align-items-lg-center text-lg-center px-lg-5 mb-4 mb-lg-0">
+      <img src="./assets/images/card-2.png" alt="smile-face" class="img-fluid" />
+      <div class="mx-2 mx-lg-0">
+       
+        <p class="mt-1 px-lg-4 leading-loose">
+          Discover Planteka verified shops and vendors near you. We love them, and you will too!
+        </p>
+      </div>
+    </div>
+
+    <div class="card w-100 w-lg-33 d-flex flex-column align-items-start align-items-lg-center text-lg-center px-lg-5">
+      <img src="./assets/images/card-3.png" alt="smile-face" class="img-fluid" />
+      <div class="mx-2 mx-lg-0">
+      
+        <p class="mt-1 px-lg-4 leading-loose">
+          We connect you with the right expert at the right time to help you care for your plants, online or in Barcelona and Madrid.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+  <div>
+    <button class="btn btn-secondary mt-4 header-button ">
+            Read All Blog posts
+          </button>
+  </div>
+  
+</section>
+
+<section class="px-4 px-lg-5 py-4 py-lg-5 position-relative mt-2 mt-lg-5">
+  <h1 class="font-yeseva-one text-primary text-center info-community-title">
+  Find planteka on Social Media 
+  </h1>
+  <div class="d-flex flex-column flex-lg-row mt-3 mt-lg-5 justify-content-center">
+    <!-- Card 1 -->
+    <div class="card w-100 w-lg-33 w-sm-50 d-flex flex-column align-items-start align-items-lg-center text-lg-center px-lg-3 mb-4 mb-lg-0">
+      <img src="./assets/images/card-1.png" alt="smile-face" class="img-fluid" />
+      
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card w-100 w-lg-33 w-sm-50 d-flex flex-column align-items-start align-items-lg-center text-lg-center px-lg-3 mb-4 mb-lg-0">
+      <img src="./assets/images/card-2.png" alt="smile-face" class="img-fluid" />
+     
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card w-100 w-lg-33 w-sm-50 d-flex flex-column align-items-start align-items-lg-center text-lg-center px-lg-3 mb-4 mb-lg-0">
+      <img src="./assets/images/card-3.png" alt="smile-face" class="img-fluid" />
+      
+    </div>
+  </div>
+
+  <div class="d-flex flex-column flex-lg-row mt-4 justify-content-center">
+    <!-- Card 4 -->
+    <div class="card w-100 w-lg-33 w-sm-50 d-flex flex-column align-items-start align-items-lg-center text-lg-center px-lg-3 mb-4 mb-lg-0">
+      <img src="./assets/images/card-4.png" alt="smile-face" class="img-fluid" />
+      
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card w-100 w-lg-33 w-sm-50 d-flex flex-column align-items-start align-items-lg-center text-lg-center px-lg-3 mb-4 mb-lg-0">
+      <img src="./assets/images/card-3.png" alt="smile-face" class="img-fluid" />
+      
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card w-100 w-lg-33 w-sm-50 d-flex flex-column align-items-start align-items-lg-center text-lg-center px-lg-3 mb-4 mb-lg-0">
+      <img src="./assets/images/card-2.png" alt="smile-face" class="img-fluid" />
+      
+    </div>
+  </div>
+</section>
+
+   <section class="bg-white py-3 px-3 px-lg-5" >
+        <h2 class="font-yeseva-one info-image-title d-lg-none mx-4" >Planteka is founded by plant lovers like you! </h2>
+        <div >
+            <div class="mx-lg-5 p-4 d-flex py-lg-5 p-lg-5 mt-lg-4" >
+                <img src="./assets/images/planteka-found.png" class="w-25 object-cover rounded-lg">
+                <div class="mx-2 text-brown text-lg-center mx-lg-5 px-lg-5" >
+                    <h3 class="text-center text-secondary leading-loose d-none d-lg-block font-yeseva-one mx-lg-5" >Did you know that green spaces generate positive business returns?</h3>
+                    <div class="mt-lg-3 info-section-info">
+                        <div><span class="fw-semibold" >Productivity:</span> Upto 15% increase</div>
+                        <div><span class="fw-semibold" >Mental Health:</span>  Up to 37% reduction in <span class="d-none d-lg-inline-block" >anxiety and</span> stress</div>
+                        <div><span class="fw-semibold" >Air Quality:</span>  Up to 30% reduction in pollutants</div>
+                        <div><span class="fw-semibold" >Employee Satisfaction:</span>  Up to 60% increase</div>
+                    </div>
+                    <div class="mt-3 mt-lg-5 info-section-info" >         <div>
+    <button class="btn btn-secondary mt-4 header-button ">
+            Join Our Community
+          </button>
+  </div>          <div>
+    <button class="btn btn-secondary mt-4 header-button ">
+            The Planteka Story
+          </button>
+  </div></div>
+                </div>
+                <div>
+    
+            </div>
+   
+        </div>
+     
+    </section>
+
+
+     <footer>
+        <div class="bg-skin border-top border-secondary-color py-3 py-lg-5 mt-5">
+            <div class="container my-4">
+                <form class="mx-2" >
+                    <div class="row d-flex align-items-center flex-md-nowrap">
+                        <div class="col-12 col-md-2 mb-4 mb-md-0 mr-md-5 text-center">
+                            <img class="col-6 col-md-12 p-0" alt="Plant communnity" src="./assets/images/footer.png">
+                        </div>
+                        <div class="col-12 col-md-8 mx-auto">
+                            <h3 class="text-secondary text-center text-md-left text-bold font-yeseva-one">Stay in touch with your plant community!</h3>
+                            <p class="text-center text-md-left mt-3">Subscribe to our newsletter for plant lovers; crafted with 🌞 &amp; 💧, and zero spam.</p>
+                            <div class="form-group d-flex">
+                                <input type="email" value="" name="EMAIL" class="required email spree-flat-input col-8 bg-white rounded-right-0" id="mce-EMAIL" placeholder="Email">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button text-uppercase btn btn-secondary spree-btn py-3 col-4 rounded-left-0">
+                            </div>
+                            <div id="mce-responses" class="clear foot">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-main p-4" >
+            <div class="footer-links-box" >
+                <div class="footer-links-title" >My Account</div>
+                <div class="footer-links-inner" >
+                    <a href="#" class="footer-link-item" >My Orders</a>
+                </div>
+            </div>
+            <div class="footer-links-box" >
+                <div class="footer-links-title" >About Us</div>
+                <div class="footer-links-inner" >
+                    <a href="#" class="footer-link-item" >My Orders</a>
+                    <a href="#" class="footer-link-item" >Vision and Mission</a>
+                    <a href="#" class="footer-link-item" >Meet the team</a>
+                    <a href="#" class="footer-link-item" >I am Planteka</a>
+                    <a href="#" class="footer-link-item" >Careers</a>
+                </div>
+            </div>
+            <div class="footer-links-box w-100" >
+                <a href="#" class="footer-links-title d-block" >Sign Up As a Plant Doctor</a>
+            </div>
+            <div class="footer-links-box" >
+                <div class="footer-links-title" >Legal</div>
+                <div class="footer-links-inner" >
+                    <a href="#" class="footer-link-item" >Privacy Policy</a>
+                    <a href="#" class="footer-link-item" >Terms and Conditions</a>
+                </div>
+            </div>
+            <div class="footer-links-box" >
+                <div class="footer-links-title" >Support</div>
+                <div class="footer-links-inner" >
+                    <a href="#" class="footer-link-item" >FAQ's</a>
+                    <a href="#" class="footer-link-item" >Contact Us</a>
+                </div>
+                <div class="d-flex flex-column align-items-center justify-content-center flex-nowrap py-2 mt-3 col-md-7 text-brown mx-auto offset-xl-1 bg-skin">
+                    <div class="pl-2 footer-spree-label">
+                      Follow us
+                    </div>
+                    <div class="mt-2 d-flex d-xl-block justify-content-center mx-auto">
+                        <div class="d-flex">
+                            <a class="text-brown" target="blank" rel="nofollow noopener" aria-label="facebook" href="https://facebook.com/planteka.co"><figure id="facebook" class="px-2"><svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 0 19.28 19.175" width="22px" class="spree-icon "><path d="m369.18 160.127a1.051 1.051 0 0 1 -1.048 1.048h-4.925v-7.439h2.515l.367-2.882h-2.882v-1.834c0-.838.21-1.415 1.415-1.415h1.519v-2.62a17.157 17.157 0 0 0 -2.253-.1 3.5 3.5 0 0 0 -3.72 3.825v2.148h-2.515v2.882h2.515v7.439h-9.221a1.051 1.051 0 0 1 -1.048-1.048v-17.083a1.051 1.051 0 0 1 1.049-1.048h17.132a1.051 1.051 0 0 1 1.048 1.048v17.079z" fill="currentColor" transform="translate(-349.9 -142)"></path></svg></figure>
+                            </a>
+                            <a class="text-brown" target="blank" rel="nofollow noopener" aria-label="instagram" href="https://instagram.com/planteka.co/"><figure id="instagram" class="px-2"><svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 0 19.227 19.175" width="22px" class="spree-icon "><path d="m1009.722 142.1h-14.617a2.281 2.281 0 0 0 -2.305 2.253v14.669a2.281 2.281 0 0 0 2.305 2.253h14.617a2.281 2.281 0 0 0 2.305-2.253v-14.669a2.352 2.352 0 0 0 -2.305-2.253zm-3.143 3.039a.581.581 0 0 1 .576-.576h1.781a.581.581 0 0 1 .576.576v1.781a.581.581 0 0 1 -.576.576h-1.781a.581.581 0 0 1 -.576-.576zm-4.191 2.934a3.668 3.668 0 1 1 0 7.335 3.667 3.667 0 1 1 0-7.335zm7.806 10.845a.581.581 0 0 1 -.576.576h-14.408a.582.582 0 0 1 -.576-.576v-9.011h2.41a3.765 3.765 0 0 0 -.419 1.834 5.868 5.868 0 0 0 11.736 0 2.929 2.929 0 0 0 -.472-1.834h2.41v9.011z" fill="currentColor" transform="translate(-992.8 -142.1)"></path></svg></figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-top border-primary bg-skin footer-body">
+            <div class="container">
+              <div class="d-flex flex-column text-brown flex-lg-row align-items-center justify-content-center py-3">
+                <div class="mb-1 mb-lg-0">
+                  <img class="mx-2" alt="Planteka: Community for Plant Lovers" title="Planteka: Community for Plant Lovers" width="32" height="28" src="./assets/images/logo-mark.png">
+                </div>
+                <div>
+                  © 2024
+                  <a aria-label="planteka.co" class="text-brown footer-link" href="https://planteka.co">Planteka Community</a>.
+                  All rights reserved.
+                </div>
+              </div>
+            </div>
+          </div>
+    </footer>
+
+
+  </body>
+</html>

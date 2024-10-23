@@ -1,0 +1,75 @@
+.hero-services {
+    background: url('../../assets/images/hero-services.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 26rem;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+
+.make-it-green-button {
+    font-size: 26px;
+    font-family: 'Pangram';
+    font-weight: normal;
+  }
+
+  .make-it-green-leave {
+    bottom: -165px;
+    left: -90px;
+    width: 300px;
+  }
+
+  .keep-it-green-leave {
+    bottom: -210px;
+    right: -90px;
+    width: 400px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .info-section-info {
+        font-size: 8px;
+    }
+    .make-it-green-title {
+        font-size: 14px;
+    }
+    .make-it-green-img {
+        width: 40%;
+        border-radius: 32px;
+    }
+    .make-it-green-leave {
+        bottom: -40px;
+        left: -25px;
+        width: 100px;
+    }
+    .keep-it-green-leave {
+        width: 180px;
+        right: -60px;
+        bottom: -85px;
+    }
+    .hero-services {
+      height: 12rem;
+    }
+    .make-it-green-button  {
+      font-size: 13px;
+    }
+    .why-planteka-info-cards {
+      font-size: 10px;
+    }
+    .why-planteka-info-cards h5 {
+      font-size: 12px;
+    }
+    .why-planteka-info-cards img {
+      width: 3rem;
+    }
+    .testimonial-logo-section img {
+      width: 5rem;
+    }
+    .planteka-founded-section a {
+      font-size: 12px !important;
+    }
+    .content-line {
+      font-size: 12px;
+    }
+  }
