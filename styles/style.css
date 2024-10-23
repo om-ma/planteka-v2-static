@@ -746,3 +746,28 @@ nav {
     }
 
 }
+
+.legal_section {
+    /* Legal Page css */
+    .legal_faq_section {
+        background-color: #F0E6DC;
+        padding: 5px;
+        border-radius: 50px;
+        font-weight: 400;
+    }
+
+    .legal_faq_button {
+        background-color: #F0E6DC;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .btn-primary:hover,
+    .legal_faq_button:focus {
+        background-color: #F0E6DC !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
+
+/* Legal Page css */
