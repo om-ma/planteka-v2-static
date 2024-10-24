@@ -58,4 +58,13 @@
       right: -60px;
       bottom: -85px;
   }
+  .border-bottom-thick  {
+    border: none;
+  }
+
+  .team_image{
+    height: 141px;
+    width: 94px !important;
+    border-radius: 400px !important;
+  }
 }
