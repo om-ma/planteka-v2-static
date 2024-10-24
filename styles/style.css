@@ -206,10 +206,13 @@ button {
     overflow-x: hidden;   
 }
 
+.underline-none {
+    text-decoration: none !important;
+}
+
 /* Component Styles */
 
 nav {
-    height: 4.5rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -372,7 +375,6 @@ nav {
 }
 
 .community-card-wrapper > .community-card > .card-link {
-    text-decoration: underline !important;
     color: var(--brown);
     font-size: 21px;
     line-height: 1.7;
@@ -599,6 +601,13 @@ nav {
 
 /* Mobile Media Queries */
 
+
+@media screen and (max-width: 1400px) {
+    .footer-main {
+        grid-template-columns: auto;
+    }
+}
+
 @media screen and (max-width: 768px) {
     /* Workshop css start */
 .card_overflow_scroll {
@@ -728,9 +737,6 @@ nav {
     .footer-body img {
         width: 22px;
         height: 20px;
-    }
-    .footer-main {
-        grid-template-columns: auto;
     }
     .custom-prev, .custom-next {
         background-size: 36px;
