@@ -215,7 +215,7 @@ button {
 nav {
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 50 !important;
 }
 
 .nav-logo {
@@ -610,6 +610,18 @@ nav {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .community-card-wrapper {
+        width: 100rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .btn-found {
+        font-size: 10px !important;
+    }
+}
+
 @media screen and (max-width: 768px) {
     /* Workshop css start */
 .card_overflow_scroll {
@@ -669,12 +681,13 @@ nav {
         color: var(--primary);
         margin: 0px;
         line-height: 1.5;
+        position: relative;
+        z-index: 10;
     }
     .community-card-wrapper-container {
         overflow-x: scroll;
         overflow-y: hidden;
         padding-right: 50px;
-
     }
     .community-card-wrapper {
         margin-top: 20px;
