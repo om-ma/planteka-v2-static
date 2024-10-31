@@ -215,7 +215,7 @@ button {
 nav {
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 50 !important;
 }
 
 .nav-logo {
@@ -338,17 +338,17 @@ nav {
 }
 
 .info-img:first-child {
-    width: 24rem;
+    width: 22rem;
     height: 16rem;
 }
 
 .info-img:last-child {
-    width: 16rem;
+    width: 18rem;
     height: 22rem;
 }
 
 .info-image-title {
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     color: var(--primary);
     margin: 0px;
@@ -378,7 +378,7 @@ nav {
     color: var(--brown);
     font-size: 21px;
     line-height: 1.7;
-    width: 10rem;
+    width: 14rem;
 }
 
 .card-link-last {
@@ -459,7 +459,7 @@ nav {
 }
 
 .found-img {
-    width: 22rem;
+    width: 25rem;
     object-fit: cover;
 }
 
@@ -545,10 +545,12 @@ nav {
 
 .footer-links-title {
     border: 4px solid var(--skin);
+    font-size: 18px;
+    font-weight: bold !important;
     text-align: center;
     padding: 12px 20px;
     border-radius: 20px;
-    color: #365D4A;
+    color: #365D4ACC;
     font-weight: 600;
 }
 
@@ -557,12 +559,12 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4px;
     margin-top: 0.5rem;
 }
 
 .footer-link-item {
     color: #1E1E1E;
+    font-size: 18px;
 }
 
 .swiper-button-prev::after {
@@ -608,18 +610,27 @@ nav {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .community-card-wrapper {
+        width: 100rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .btn-found {
+        font-size: 10px !important;
+    }
+}
+
 @media screen and (max-width: 768px) {
     /* Workshop css start */
 .card_overflow_scroll {
     overflow: scroll;
 }
 /* Workshop css end */
-
-    .hero-header {
-        min-height: 12rem;
-    }
     .hero-title {
         font-size: 18px;
+        line-height: 1.7;
     }
     .nav-logo {
         width: 100px;
@@ -649,9 +660,9 @@ nav {
         font-size: 14px;
     }
     .header-button {
-        border-radius: 150px;
-        font-size: 14px;
-        padding: 3px 20px 3px 20px;
+        border-radius: 6px;
+        font-size: 12px !important;
+        padding: 3px 10px 3px 10px;
     }
     .info-image-section > h2 {
         font-size: 20px !important;
@@ -662,32 +673,46 @@ nav {
     }
     .info-img:last-child {
         width: 6rem;
-        height: 12rem;
+        height: 9rem;
     }
     .info-community-title {
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
         color: var(--primary);
         margin: 0px;
-        line-height: 1.8;
+        line-height: 1.5;
+        position: relative;
+        z-index: 10;
     }
     .community-card-wrapper-container {
         overflow-x: scroll;
         overflow-y: hidden;
         padding-right: 50px;
-
     }
     .community-card-wrapper {
         margin-top: 20px;
         width: 45rem;
         gap: 20px;
     }
-    .community-card-wrapper > .community-card > .card-link {
-        font-size: 12px;
+    .community-card-wrapper > .community-card {
+        gap: 10px;
     }
+    .community-card-wrapper > .community-card > .card-link {
+        font-size: 14px;
+        width: 10rem;
+    }
+    
+    .community-card-link-price {
+        font-size: 12px !important;
+    }
+    .swiper-slide {
+        border-radius: 20px !important;
+    }
+
     .slider-content-container {
         width: 100% !important;
         margin-top: -24px;
+        transform: translateX(-30px);
     }
     .slider-content-wrapper {
         max-width: 100% !important;
@@ -710,6 +735,7 @@ nav {
     }
     .found-img {
         width: 40%;
+        border-radius: 10px;
     }
     .found-content {
         width: 100%;
@@ -726,10 +752,10 @@ nav {
         background: white;
     }
     .swiper-button-prev:after {
-       font-size: 24px !important;
+       font-size: 16px !important;
     }
     .swiper-button-next:after {
-       font-size: 24px !important;
+       font-size: 16px !important;
     }
     .footer-body {
         font-size: 0.525rem;
@@ -739,14 +765,15 @@ nav {
         height: 20px;
     }
     .custom-prev, .custom-next {
-        background-size: 36px;
+        background-size: 30px;
         top: 65% !important;
     }
     .btn {
         font-size: 14px;
     }
     .hero-header {
-        height: 12rem;
+        height: 10rem !important;
+        background: url('../assets/images/home-hero-header-mobile.png');
     }
     .slider-content-wrapper svg {
         width: 16px;
@@ -754,6 +781,30 @@ nav {
     }
     .slider-img-container {
         width: 80%;
+    }
+    .hero-tagline {
+        font-size: 12px;
+    }
+    .community-card img {
+        height: 12rem;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .slider-img-container > img {
+        width: 90%;
+    }
+    .slide-content-footer-tagline {
+        font-size: 9px !important;
+    }
+    .found-content-description {
+        font-size: 12px !important;
+    }
+    .btn-found {
+        font-size: 13px;
+    }
+    .footer-links-title, .footer-link-item {
+        font-size: 16px;
     }
 }
 
@@ -763,7 +814,12 @@ nav {
     .overflow-x-lg-visible {
         overflow: visible !important;
     }
-
+    .gap-lg-1 {
+        gap: 1rem !important;
+    }
+    .btn-found {
+        font-size: 20px !important;
+    }
 }
 
 .legal_section {
